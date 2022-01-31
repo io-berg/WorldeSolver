@@ -1,1 +1,0 @@
-var reader = new FileReader();
