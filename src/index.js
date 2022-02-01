@@ -1,4 +1,4 @@
-import { cloneWith } from "lodash";
+import _, { cloneWith } from "lodash";
 import { GetWords } from "./solver";
 import { DrawWords, ClearWords } from "./viewController";
 
@@ -8,8 +8,8 @@ formSubmit.addEventListener('click', () => {
     const form = document.querySelector('#wordDataForm');
 
     var data = {
-        incorrect: form.wrongLetters.value.toLowerCase(),
-        correct: form.correctLetters.value.toLowerCase(),
+        incorrect: [...form.wrongLetters.value.toLowerCase()],
+        correct: [...form.correctLetters.value.toLowerCase()],
         correctPos: {
             "0": form.correctPos1.value.toLowerCase(),
             "1": form.correctPos2.value.toLowerCase(),
@@ -19,6 +19,8 @@ formSubmit.addEventListener('click', () => {
         },
     }
     console.log(data);
+    console.log(data.correctPos[0]);
 
-    GetWords(data);
+    ClearWords();
+    DrawWords(GetWords(data));
 });
