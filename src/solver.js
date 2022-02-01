@@ -28,6 +28,8 @@ export function GetWords(wordData) {
         return false;
     });
 
+    console.log(posibleWords.length);
+
     return posibleWords;
 }
 

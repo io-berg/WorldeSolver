@@ -18,8 +18,6 @@ formSubmit.addEventListener('click', () => {
             "4": form.correctPos5.value.toLowerCase(),
         },
     }
-    console.log(data);
-    console.log(data.correctPos[0]);
 
     ClearWords();
     DrawWords(GetWords(data));
