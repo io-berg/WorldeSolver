@@ -1,6 +1,7 @@
 import _, { cloneWith } from "lodash";
 import { GetWords } from "./solver";
 import { DrawWords, ClearWords } from "./viewController";
+import css from "./styles.css"
 
 const formSubmit = document.querySelector('#submitBtn');
 
