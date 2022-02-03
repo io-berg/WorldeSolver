@@ -9,9 +9,12 @@
 <script defer src="index_bundle.js"></script></head>
 
 <body>
+    <div id="header-div">
+        <h1 id="header">WORDLESOLVER</h1>
+    </div>
     <form id="wordDataForm" action="javascript:void(0);">
+        <h4>Correctly placed letters</h4>
         <div id="correctPositionContainer">
-            <h4>Correctly placed letters</h4>
             <input class="correctPos" id="correctPos1" name="corPos1" type="text" maxlength="1">
             <input class="correctPos" id="correctPos2" name="corPos2" type="text" maxlength="1">
             <input class="correctPos" id="correctPos3" name="corPos3" type="text" maxlength="1">
@@ -19,9 +22,9 @@
             <input class="correctPos" id="correctPos5" name="corPos5" type="text" maxlength="1">
         </div>
         <h4>Valid Letters</h4>
-        <input id="correctLetters" type="text">
+        <input class="letterInput" id="correctLetters" type="text">
         <h4>Invalid Letters</h4>
-        <input id="wrongLetters" name="wrongLetters" type="text">
+        <input class="letterInput" id="wrongLetters" name="wrongLetters" type="text">
         <input id="submitBtn" type="submit">
     </form>
 
